@@ -1,0 +1,46 @@
+body {
+    background-color: #eee;
+    font-family: sans-serif;
+    min-width: 1024px;
+}
+
+div {
+    min-width: 60px;
+    min-height: 40px;
+    border: thin solid black;
+    padding: 2px;
+    margin: 2px;
+}
+
+div.container {
+    max-width: 210px;
+    padding: 3px 5px;
+    border: thin solid black
+}
+
+div.left {
+    float: left;
+    overflow: hidden;
+    border: none;
+    padding: 0 0 0 8px;
+    margin: 0;
+}
+
+div.clear {
+    float: none;
+    overflow: hidden;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+pre {
+    background-color: lightgray;
+    color: #333;
+    padding: 2px 4px;
+    border: thin solid lightgray;
+    width: 260px;
+    font-size: 0.85rem;
+}
+
+

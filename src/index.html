@@ -1,0 +1,111 @@
+<html lang='en'>
+<head>
+    <link rel="stylesheet" type="text/css" href="public/style.css"/>
+</head>
+<body>
+<h1>CSS Notes</h1>
+<p>Notes on the CSS language.</p>
+<h2>Flexbox</h2>
+<pre style="width: 560px">
+flex parent
+-----------
+flex-direction: column, column-reverse, row, row-reverse
+flex-wrap: wrap, no-wrap, wrap-reverse
+flex-flow: (flex-direction + flex-wrap) row wrap
+justify-content: center, flex-start, flex-end, space-around, space-between
+align-items: center, flex-start, flex-end, stretch, baseline
+align-content: space-between, space-around, stretch, center, flex-start, flex-end
+
+flex children
+-------------
+order: 1, 2, ... n
+flex-grow: 0 (relative number, default 0)
+flex-shrink: 1 (relative number, default 1)
+flex-basis: 200px (initial length)
+align-self: center, flex-start, flex-end, stretch, baseline (overrides align-items on parent)
+
+responsive
+----------
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+</pre>
+<hr/>
+<pre>
+display: flex
+display: flex; flex-flow: row
+</pre>
+<div class="container" style="display:flex">
+    <div style="background-color:lightblue">1</div>
+    <div style="background-color:lightcoral">2</div>
+    <div style="background-color:lightgreen">3</div>
+    <div style="background-color:lightyellow">4</div>
+</div>
+<hr/>
+
+<div class="clear">
+    <div class="left">
+    <pre>
+display: flex; flex-flow: row wrap
+    </pre>
+        <div class="container" style="display:flex; flex-flow: row wrap">
+            <div style="background-color:lightblue">1</div>
+            <div style="background-color:lightcoral">2</div>
+            <div style="background-color:lightgreen">3</div>
+            <div style="background-color:lightyellow">4</div>
+        </div>
+    </div>
+
+    <div class="left">
+    <pre>
+display: flex; flex-flow: row-reverse wrap
+    </pre>
+        <div class="container" style="display:flex; flex-flow: row-reverse wrap">
+            <div style="background-color:lightblue">1</div>
+            <div style="background-color:lightcoral">2</div>
+            <div style="background-color:lightgreen">3</div>
+            <div style="background-color:lightyellow">4</div>
+        </div>
+    </div>
+</div>
+
+
+<hr/>
+
+<div class="clear">
+    <div class="left">
+    <pre>
+display: flex; flex-flow: column
+    </pre>
+        <div class="container" style="display:flex; flex-flow: column">
+            <div style="background-color:lightblue">1</div>
+            <div style="background-color:lightcoral">2</div>
+            <div style="background-color:lightgreen">3</div>
+            <div style="background-color:lightyellow">4</div>
+        </div>
+    </div>
+
+    <div class="left">
+    <pre>
+display: flex; flex-flow: column-reverse
+    </pre>
+        <div class="container" style="display:flex; flex-flow: column-reverse">
+            <div style="background-color:lightblue">1</div>
+            <div style="background-color:lightcoral">2</div>
+            <div style="background-color:lightgreen">3</div>
+            <div style="background-color:lightyellow">4</div>
+        </div>
+    </div>
+</div>
+
+<hr/>
+</body>
+</html>

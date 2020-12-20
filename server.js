@@ -1,10 +1,8 @@
-const http = require('http');
+const express = require("express")
 
-const requestListener = function (req, res) {
-  res.writeHead(200);
-  res.end('Hello, World!');
-}
+const app = express()
+const port = 8080
 
-const server = http.createServer(requestListener);
-console.log('Listening on port 8080')
-server.listen(8080);
+app.use(express.static("./src"))
+
+app.listen(port, () => console.log(`listening on port ${port}!`))
