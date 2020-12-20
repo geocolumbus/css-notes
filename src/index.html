@@ -113,10 +113,10 @@ flex-flow: row-reverse wrap-reverse
     <div class="left">
 <pre>
 display: flex;
-flex-flow: row wrap;
+flex-flow: column;
 wrap, wrap-reverse don't matter
 </pre>
-        <div class="container" style="display:flex; flex-flow: row wrap">
+        <div class="container" style="display:flex; flex-flow: column">
             <div style="background-color:lightblue">1</div>
             <div style="background-color:lightcoral">2</div>
             <div style="background-color:lightgreen">3</div>
@@ -127,27 +127,16 @@ wrap, wrap-reverse don't matter
     <div class="left">
 <pre>
 display: flex;
-flex-flow: row wrap-reverse
+flex-flow: column-reverse;
 wrap, wrap-reverse don't matter
 </pre>
-        <div class="container" style="display:flex; flex-flow: row wrap-reverse">
+        <div class="container" style="display:flex; flex-flow: column-reverse">
             <div style="background-color:lightblue">1</div>
             <div style="background-color:lightcoral">2</div>
             <div style="background-color:lightgreen">3</div>
             <div style="background-color:lightyellow">4</div>
         </div>
     </div>
-</div>
-<hr/> <!-- ------------------------------------------------------------------->
-<pre>
-display: flex
-flex-flow: row wrap-reverse wrap-reverse
-</pre>
-<div class="container" style="display:flex; flex-flow: row wrap-reverse wrap-reverse">
-    <div style="background-color:lightblue">1</div>
-    <div style="background-color:lightcoral">2</div>
-    <div style="background-color:lightgreen">3</div>
-    <div style="background-color:lightyellow">4</div>
 </div>
 <hr/> <!-- ------------------------------------------------------------------->
 <div style="display:flex; flex-flow: row wrap; width: 520px; border: none">
@@ -381,11 +370,59 @@ display: flex;
 flex-flow: row wrap;
 justify-content: center;
 align-content: center;
+
 </pre>
-        <div class="container-tall" style="display:flex; flex-flow: row wrap; justify-content: center; align-items: center">
+        <div class="container-tall"
+             style="display:flex; flex-flow: row wrap; justify-content: center; align-items: center">
             <div class="box3">Perfectly<br/>Centered</div>
         </div>
     </div>
+
+    <div style="border:none"> <!-- ======================================== -->
+        <pre>
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+align-content: center;
+align-items: baseline;
+</pre>
+        <div class="container-tall"
+             style="display:flex; flex-flow: row wrap; justify-content: center; align-content: center; align-items: baseline">
+            <div class="box1">large</div>
+            <div class="box5">small</div>
+        </div>
+    </div>
+
+    <div style="border:none"> <!-- ======================================== -->
+        <pre>
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+align-content: center;
+align-items: center;
+</pre>
+        <div class="container-tall"
+             style="display:flex; flex-flow: row wrap; justify-content: center; align-content: center; align-items: center">
+            <div class="box1">large</div>
+            <div class="box5">small</div>
+        </div>
+    </div>
+
+    <div style="border:none"> <!-- ======================================== -->
+        <pre>
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+align-content: center;
+align-items: flex-end;
+</pre>
+        <div class="container-tall"
+             style="display:flex; flex-flow: row wrap; justify-content: center; align-content: center; align-items: flex-end">
+            <div class="box1">large</div>
+            <div class="box5">small</div>
+        </div>
+    </div>
+
 </div>
 </body>
 </html>

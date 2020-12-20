@@ -18,7 +18,7 @@ div.container {
     border: thin solid black
 }
 
-div.box1, div.box2, div.box3, div.box4 {
+div.box1, div.box2, div.box3, div.box4, div.box5 {
     min-width: auto;
     min-height: auto;
     text-align: center;
@@ -26,7 +26,7 @@ div.box1, div.box2, div.box3, div.box4 {
 
 div.box1 {
     background-color: lightblue;
-    font-size: 36px;
+    font-size: 48px;
 }
 
 div.box2 {
