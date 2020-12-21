@@ -88,4 +88,15 @@ pre {
     font-size: 0.85rem;
 }
 
+div.grid-dad {
+    min-width: auto;
+    min-height: auto;
+    border: thin solid black;
+    padding: 2px;
+    margin: 2px;
+    width: 400px;
+}
+
+.grid-dad .grid-kid {
+}
 

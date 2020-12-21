@@ -1,0 +1,30 @@
+<html lang='en'>
+<head>
+    <link rel="stylesheet" type="text/css" href="public/style.css"/>
+</head>
+<body>
+<h1>CSS Notes</h1>
+<p>Notes on the CSS language.</p>
+<button onclick="document.location='/index.html'">Flexbox</button>
+<h2>Grid</h2>
+<pre style="width: 560px">
+display: grid
+grid-template-columns
+</pre>
+<hr/> <!-- ------------------------------------------------------------------->
+<pre style="width: 300px">
+display: grid, inline-grid
+grid-template-columns: auto auto auto or 200px 200px 200px
+grid-column-start: 1
+grid-column-end: 3
+grid-column-gap: 00px
+grid-row-gap: 00px
+grid-gap: 00px 00px (grid-column-gap + grid-row-gap)
+</pre>
+<div class="grid-dad" style="display: grid; grid-template-columns: auto auto auto;">
+    <div class="grid-kid" style="background-color: lightcoral">George</div>
+    <div class="grid-kid" style="background-color: lightgreen">Alex</div>
+    <div class="grid-kid" style="background-color: lightyellow">Zach</div>
+</div>
+</body>
+</html>
