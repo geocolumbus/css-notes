@@ -1,0 +1,60 @@
+<html lang='en'>
+<head>
+    <link rel="stylesheet" type="text/css" href="public/style.css"/>
+</head>
+<style>
+    #content {
+        width: 460px;
+    }
+
+    #log-container {
+        width: 230px;
+    }
+
+    #log-container pre {
+        background-color: inherit;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        line-height: 1.1rem;
+    }
+
+    #content, #log-container {
+        height: 560px;
+        float: left;
+        border: thin solid gray;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        padding: 2px;
+    }
+
+    .flex {
+        height: 556px;
+        background-color: #ffc;
+        width: 458px;
+        display: flex;
+        flex-flow: row wrap;
+        /* align-content: flex-start; */
+        align-content: flex-start;
+        align-items: center;
+        overflow-y: scroll;
+    }
+
+    .box {
+        margin: 2px;
+        border: thin solid black;
+    }
+</style>
+<body>
+<h1>CSS Notes</h1>
+<p>Notes on the CSS language.</p>
+<button onclick="document.location='/index.html'">Flexbox</button>
+<button onclick="document.location='grid.html'">Grid</button>
+<button onclick="document.location='test.html'" class="active">Test</button>
+<h2>Test</h2>
+<div id="content"></div>
+<div id="log-container"></div>
+<script type="text/javascript" src="public/test.js"></script>
+</body>
+</html>

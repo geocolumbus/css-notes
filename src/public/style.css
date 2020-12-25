@@ -4,81 +4,6 @@ body {
     min-width: 1024px;
 }
 
-div {
-    min-width: 60px;
-    min-height: 40px;
-    border: thin solid black;
-    padding: 2px;
-    margin: 2px;
-}
-
-div.container {
-    max-width: 210px;
-    padding: 3px 5px;
-    border: thin solid black
-}
-
-div.box1, div.box2, div.box3, div.box4, div.box5 {
-    min-width: auto;
-    min-height: auto;
-    text-align: center;
-}
-
-div.box1 {
-    background-color: lightblue;
-    font-size: 48px;
-}
-
-div.box2 {
-    background-color: lightcoral;
-    font-size: 12px;
-}
-
-div.box3 {
-    background-color: lightgreen;
-    font-size: 18px;
-}
-
-div.box4 {
-    background-color: lightyellow;
-    font-size: 8px;
-}
-
-div.box5 {
-    background-color: lightpink;
-    font-size: 10px;
-}
-
-div.container-medium {
-    width: 210px;
-    height: 120px;
-    padding: 3px 5px;
-    border: thin solid black
-}
-
-div.container-tall {
-    width: 210px;
-    height: 200px;
-    padding: 3px 5px;
-    border: thin solid black
-}
-
-div.left {
-    float: left;
-    overflow: hidden;
-    border: none;
-    padding: 0 0 0 8px;
-    margin: 0;
-}
-
-div.clear {
-    float: none;
-    overflow: hidden;
-    border: none;
-    padding: 0;
-    margin: 0;
-}
-
 pre {
     background-color: lightgray;
     color: #333;
@@ -88,15 +13,6 @@ pre {
     font-size: 0.85rem;
 }
 
-div.grid-dad {
-    min-width: auto;
-    min-height: auto;
-    border: thin solid black;
-    padding: 2px;
-    margin: 2px;
-    width: 400px;
+.active {
+    background-color: lightblue;
 }
-
-.grid-dad .grid-kid {
-}
-

@@ -1,12 +1,91 @@
 <html lang='en'>
 <head>
     <link rel="stylesheet" type="text/css" href="public/style.css"/>
+    <style>
+        div {
+            min-width: 60px;
+            min-height: 40px;
+            border: thin solid black;
+            padding: 2px;
+            margin: 2px;
+        }
+
+        div.container {
+            max-width: 210px;
+            padding: 3px 5px;
+            border: thin solid black
+        }
+
+        div.box1, div.box2, div.box3, div.box4, div.box5 {
+            min-width: auto;
+            min-height: auto;
+            text-align: center;
+        }
+
+        div.box1 {
+            background-color: lightblue;
+            font-size: 48px;
+        }
+
+        div.box2 {
+            background-color: lightcoral;
+            font-size: 12px;
+        }
+
+        div.box3 {
+            background-color: lightgreen;
+            font-size: 18px;
+        }
+
+        div.box4 {
+            background-color: lightyellow;
+            font-size: 8px;
+        }
+
+        div.box5 {
+            background-color: lightpink;
+            font-size: 10px;
+        }
+
+        div.container-medium {
+            width: 210px;
+            height: 120px;
+            padding: 3px 5px;
+            border: thin solid black
+        }
+
+        div.container-tall {
+            width: 210px;
+            height: 200px;
+            padding: 3px 5px;
+            border: thin solid black
+        }
+
+        div.left {
+            float: left;
+            overflow: hidden;
+            border: none;
+            padding: 0 0 0 8px;
+            margin: 0;
+        }
+
+        div.clear {
+            float: none;
+            overflow: hidden;
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
 <h1>CSS Notes</h1>
 <p>Notes on the CSS language.</p>
+<button onclick="document.location='/index.html'" class="active">Flexbox</button>
 <button onclick="document.location='grid.html'">Grid</button>
-<h2>Flexbox</h2>
+<button onclick="document.location='test.html'">Test</button>
+<h2>Flexbox (7/9/2013)</h2>
+<a href="https://www.w3schools.com/css/css3_flexbox.asp">W3 Schools: CSS Flexbox</a>
 <pre style="width: 560px">
 flex parent
 -----------

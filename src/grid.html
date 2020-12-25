@@ -1,30 +1,73 @@
 <html lang='en'>
 <head>
     <link rel="stylesheet" type="text/css" href="public/style.css"/>
+    <style>
+        div {
+            min-width: 60px;
+            min-height: 40px;
+            border: thin solid black;
+            padding: 2px;
+            margin: 2px;
+        }
+
+        .grid-dad {
+            min-width: auto;
+            min-height: auto;
+            border: thin solid black;
+            padding: 2px;
+            margin: 2px;
+            width: 450px;
+        }
+
+        .grid-kid, .grid-kid2, .grid-kid3 {
+            min-width: auto;
+            min-height: auto;
+            width: auto;
+            height: auto;
+        }
+
+        .grid-kid2 {
+            width: 170px;
+        }
+
+        .grid-kid3 {
+            height: 35px;
+        }
+    </style>
 </head>
 <body>
 <h1>CSS Notes</h1>
 <p>Notes on the CSS language.</p>
 <button onclick="document.location='/index.html'">Flexbox</button>
-<h2>Grid</h2>
+<button onclick="document.location='grid.html'" class="active">Grid</button>
+<button onclick="document.location='test.html'">Test</button>
+<h2>Grid (7/20/2016)</h2>
+<a href="https://www.w3schools.com/css/css_grid.asp">W3 Schools: CSS Grid Layout Module</a>
 <pre style="width: 560px">
-display: grid
-grid-template-columns
-</pre>
-<hr/> <!-- ------------------------------------------------------------------->
-<pre style="width: 300px">
 display: grid, inline-grid
 grid-template-columns: auto auto auto or 200px 200px 200px
 grid-column-start: 1
 grid-column-end: 3
 grid-column-gap: 00px
 grid-row-gap: 00px
-grid-gap: 00px 00px (grid-column-gap + grid-row-gap)
+grid-gap: 00px 00px (grid-column-gap + grid-row-gap)</pre>
+<hr/> <!-- ------------------------------------------------------------------->
+<pre style="width: 300px">
+display: grid;
+grid-template-columns: auto auto auto;
 </pre>
 <div class="grid-dad" style="display: grid; grid-template-columns: auto auto auto;">
     <div class="grid-kid" style="background-color: lightcoral">George</div>
-    <div class="grid-kid" style="background-color: lightgreen">Alex</div>
+    <div class="grid-kid2"
+         style="background-color; grid-column-start: 2; grid-column-end: 4; background-color: lightblue">Fixed at 200px
+        wide
+    </div>
     <div class="grid-kid" style="background-color: lightyellow">Zach</div>
+    <div class="grid-kid3" style="background-color: lightcoral; grid-row-start:2; grid-row-end: 4">Fixed at 35px high
+    </div>
+    <div class="grid-kid" style="background-color: lightgreen">Alex</div>
+    <div class="grid-kid" style="background-color: lightcoral">George</div>
+    <div class="grid-kid" style="background-color: lightgreen">Alex</div>
 </div>
 </body>
 </html>
