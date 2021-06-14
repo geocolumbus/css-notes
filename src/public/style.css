@@ -9,7 +9,8 @@ pre {
     color: #333;
     padding: 2px 4px;
     border: thin solid lightgray;
-    width: 230px;
+    max-width: 900px;
+    min-width: 300px;
     font-size: 0.85rem;
 }
 
